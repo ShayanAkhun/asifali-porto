@@ -8,18 +8,18 @@ import {
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/legacy/image";
 
-const Images = [
+export const Images = [
     {
         id:1,
-        src: '/public/img/test1.png'
+        src: '/img/test1.png'
     },
     {
         id:2,
-        src: '/public/img/test2.png'
+        src: '/img/test2.png'
     },
     {
         id:3,
-        src: '/public/img/test3.png',
+        src: '/img/test3.png',
     },
     {
         id:4,

@@ -12,21 +12,40 @@ import Hr from "@/components/Hr";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import LongFormCarousel from "@/components/Long Form Video carousel";
-import Testimonials from "@/components/Testimonials";
-
 
 const MyPage = () => {
   const fullpageOptions = {
-    anchors: ["home", "projects", "contact"],
+    anchors: ["home", "testimonials", "projects", "contact"],
     scrollingSpeed: 1000,
     licenseKey: "gplv3-license",
     menu: "#sidebar",
     lockAnchors: false,
   };
+  const videoLinks = [
+    'https://www.youtube.com/embed/7izs5orYtXo',
+    'https://www.youtube.com/embed/Svh4nKmNSj0',
+    'https://www.youtube.com/embed/CfN8nGhtOxM',
+  ];
+  const Images = [
+    {
+      id: 1,
+      src: '/img/test1.png'
+    },
+    {
+      id: 2,
+      src: '/img/test2.png'
+    },
+    {
+      id: 3,
+      src: '/img/test3.png',
+    },
+    {
+      id: 4,
+      src: '/img/test4.png'
+    }
+  ]
 
   const VideoLink = [" https://www.youtube.com/embed/wmkoEzDVc18"];
 
@@ -99,25 +118,24 @@ const MyPage = () => {
                 </motion.div>
                 {/* Main Page Photo */}
                 <div>
-
-                <iframe
-                src={VideoLink}
-                title={`Video`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{
-                  top: 0,
-                  left: 0,
-                  width: '120%',
-                  height: '150%',
-                }}
-                ></iframe>
+                  <iframe
+                    src={VideoLink}
+                    title={`Video`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    style={{
+                      top: 0,
+                      left: 0,
+                      width: "120%",
+                      height: "150%",
+                    }}
+                  ></iframe>
                 </div>
               </div>
             </div>
-            {/* Projects */}
+            {/* Testimonials */}
             <div className="section ">
-              <div className="relative bottom-[200px] mb-10 md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
+              <div className="relative bottom-[200px]  mb-10 md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-10 w-full  absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
                   <motion.h1
                     className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0  text-black text-5xl md:text-8xl font-bold"
@@ -142,12 +160,77 @@ const MyPage = () => {
                   >
                     These are some of my Clients Testimonials{" "}
                   </motion.p>
-            
+                  <div style={{display:'flex', 
+                    flexDirection:'row',justifyContent: 'space-between', gap:8, right:14}}>
+                    {Images.map((image) => (
+                        <Image
+                          src={image.src}
+                          alt={`Slide ${image.id}`}
+                          width={400}
+                          height={200}
+                        />
+                    ))}
+                  </div>
                 </div>
               </div>
-                    <Testimonials/>
             </div>
-            {/* Footer */}
+            {/* Projects */}
+            <div className="section">
+              <div className="relative bottom-[200px] right-14 md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
+                <div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
+                  <motion.h1
+                    className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold"
+                    initial={{ x: -100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{
+                      delay: 0.1,
+                      type: "spring",
+                    }}
+                  >
+                    Projects
+                  </motion.h1>
+                  <Hr />
+                  <motion.p
+                    className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+                    initial={{ x: -100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{
+                      delay: 0.2,
+                      type: "spring",
+                    }}
+                  >
+                    This is some of my projects that I have done and currently working on.
+                  </motion.p>
+                  <div className="embla__container">
+                    {videoLinks.map((videoLink, index) => (
+
+                      <div className="embla__slide" key={index} style={{
+                        overflow: 'hidden',
+                        width: '400px',
+                        height: '250px',
+                        position: 'relative',
+                      }}>
+                        <iframe
+                          src={videoLink}
+                          title={`Video ${index + 1}`}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                          }}
+                        ></iframe>
+                      </div>
+
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Projects */}
             <div className="section">
               <div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
@@ -264,20 +347,6 @@ const MyPage = () => {
                       }}
                     >
                       <FontAwesomeIcon icon={faYoutube} className="text-3xl" />
-                    </motion.a>
-                    <motion.a
-                      href="https://discordapp.com/users/bloody#6118"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-                      initial={{ opacity: 0, y: 40 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        y: { delay: 0.5 },
-                        opacity: { delay: 0.6 },
-                      }}
-                    >
-                      <FontAwesomeIcon icon={faDiscord} className="text-3xl" />
                     </motion.a>
                   </div>
                 </div>

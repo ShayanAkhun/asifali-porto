@@ -5,7 +5,9 @@ import {
 	faUser,
 	faFolderOpen,
 	faEnvelope,
+	
 } from "@fortawesome/free-solid-svg-icons";
+import { faRocketchat } from "@fortawesome/free-brands-svg-icons";
 
 
 const Sidebar = () => {
@@ -30,8 +32,16 @@ const Sidebar = () => {
 						<FontAwesomeIcon icon={faHome} className="text-xl" />
 					</button>
 				</li>
-				<li data-menuanchor="projects">
+				<li data-menuanchor="testimonials">
 					<button onClick={() => handleMoveToSection(2)}>
+						<FontAwesomeIcon
+							icon={faRocketchat}
+							className="text-xl"
+						/>
+					</button>
+				</li>
+				<li data-menuanchor="projects">
+					<button onClick={() => handleMoveToSection(3)}>
 						<FontAwesomeIcon
 							icon={faFolderOpen}
 							className="text-xl"
@@ -39,7 +49,7 @@ const Sidebar = () => {
 					</button>
 				</li>
 				<li data-menuanchor="contact">
-					<button onClick={() => handleMoveToSection(3)}>
+					<button onClick={() => handleMoveToSection(4)}>
 						<FontAwesomeIcon
 							icon={faEnvelope}
 							className="text-xl"
