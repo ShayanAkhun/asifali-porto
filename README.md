@@ -1,4 +1,4 @@
-# Alvalens Porto 2
+# Asif Ali Porto 
 
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=aleph-discord-bot.visitor-badge)
 
@@ -24,12 +24,12 @@ This is my debut project utilizing Next.js, a portfolio website featuring four p
 2. Clone the repository:
 
    ```shell
-   git clone https://github.com/Alvalens/Alvalens-porto-2-nextJs.git
+   git clone https://github.com/ShayanAkhun/asifali-porto.git
    ```
 3. Navigate to the project directory:
 
    ```shell
-   cd Alvalens-porto-2-nextJs
+   cd asifali-porto-nextJs
    ```
 4. Install dependencies:
 
@@ -102,7 +102,6 @@ Contributions are welcome! If you find any issues or have suggestions, feel free
 
 ## Reference (inspiration)
 
-- https://www.frans.my.id/
 - https://kuon-yagi-portfolio.netlify.app/
 
 ## License
