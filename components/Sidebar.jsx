@@ -30,13 +30,8 @@ const Sidebar = () => {
 						<FontAwesomeIcon icon={faHome} className="text-xl" />
 					</button>
 				</li>
-				<li data-menuanchor="about">
-					<button onClick={() => handleMoveToSection(2)}>
-						<FontAwesomeIcon icon={faUser} className="text-xl" />
-					</button>
-				</li>
 				<li data-menuanchor="projects">
-					<button onClick={() => handleMoveToSection(3)}>
+					<button onClick={() => handleMoveToSection(2)}>
 						<FontAwesomeIcon
 							icon={faFolderOpen}
 							className="text-xl"
@@ -44,7 +39,7 @@ const Sidebar = () => {
 					</button>
 				</li>
 				<li data-menuanchor="contact">
-					<button onClick={() => handleMoveToSection(4)}>
+					<button onClick={() => handleMoveToSection(3)}>
 						<FontAwesomeIcon
 							icon={faEnvelope}
 							className="text-xl"

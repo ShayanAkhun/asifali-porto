@@ -8,39 +8,20 @@ import "./nprogress.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
-	title: "Alvalens | Portofolio",
+	title: "Asif Ali | Portofolio",
 	description:
-		"My name is Alvalens, I'm a web developer and I'm passionate about it. I'm currently studying at Universitas Negeri Malang.",
-	author: "Alvalen Shafelbilyunazra",
-	siteUrl: "https://www.alvalens.my.id",
-	applicationName: "Alvalens",
+		"My name is Asif Ali, I'm a Video Editor and I'm passionate about it.",
+	author: "Asif Ali",
+	applicationName: "Asif Ali",
 	keywords: [
-		"alvalens",
-		"alvalen",
-		"alvalen shafel",
-		"shafel",
-		"alvalen shafelbilyunazra",
-		"alvalen shafel bilyunazra",
-		"bloodfallen",
-		"alvalen porto",
-		"alvalen um",
-	],
-	openGraph: {
-		type: "website",
-		url: "https://www.alvalens.my.id",
-		title: "Alvalens | Portofolio",
-		site_name: "Alvalens | Portofolio",
-		description: "My name is Alvalens, This is my portofolio website.",
-		width: 1200,
-		height: 630,
-		images: [
-			{
-				url: "/og-image-rev.png",
-				alt: "Alvalens Portofolio",
-			},
-		],
-		site_name: "Alvalens | Portofolio",
-	},
+		"Asif Ali",
+		" Ali",
+		"Asif",
+		"video",
+		"editor",
+		"Asif Ali Video",
+		"Asif Ali video Editor",
+	]
 };
 
 
@@ -61,6 +42,14 @@ export default function RootLayout({ children }) {
 				{children}
 				<Chat />
 				<Analytics />
+				<script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 			</body>
 		</html>
 	);

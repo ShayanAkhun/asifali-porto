@@ -77,10 +77,6 @@ There are four main sections and two subpages in this portfolio website:
 
 The home page serves as an introduction to the portfolio. It provides an overview of your web development skills and passion for the field. Users can explore other sections from here.
 
-### About
-
-The about page offers more detailed information about you as a web developer. It might include your background, education, skills, and interests in the field of web development.
-
 ### Projects
 
 The projects section showcases your work as a web developer. Users can explore the projects you've worked on, and you can provide details such as project descriptions, technologies used, and images.

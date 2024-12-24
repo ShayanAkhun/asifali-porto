@@ -132,19 +132,6 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 								</motion.h2>
 							</div>
 						</a>
-						<Link href="/about">
-							<div
-								onClick={handleItemClick}
-								className="text-2xl font-bold text-white">
-								<motion.h2
-									className="text-white"
-									variants={itemVariants}
-									animate={isNavOpen ? "open" : "closed"}
-									custom={0.2}>
-									About
-								</motion.h2>
-							</div>
-						</Link>
 						<Link href="/projects">
 							<div
 								onClick={handleItemClick}
@@ -200,7 +187,7 @@ const Navbar = () => {
 						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${
 							isNavOpen ? "text-white" : ""
 						}`}>
-						Alvalens
+						Asif Ali
 					</h1>
 				</div>
 				<div className="flex flex-row items-center">
