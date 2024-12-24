@@ -14,8 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { InfiniteMovingCardsDemo } from "@/components/Infinity-moving cards/cards";
-
+import { InfiniteMovingCard } from "@/components/ui/infinitycard";
 const MyPage = () => {
   const fullpageOptions = {
     anchors: ["home", "testimonials", "projects", "contact"],
@@ -161,8 +160,8 @@ const MyPage = () => {
                   >
                     These are some of my Clients Testimonials{" "}
                   </motion.p>
-                  <InfiniteMovingCardsDemo/>
-                  {/* <div style={{display:'flex', 
+                  <InfiniteMovingCard/>
+                  <div style={{display:'flex', 
                     flexDirection:'row',justifyContent: 'space-between', gap:8, right:14}}>
                     {Images.map((image) => (
                         <Image
@@ -172,7 +171,7 @@ const MyPage = () => {
                           height={200}
                         />
                     ))}
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>
@@ -205,7 +204,6 @@ const MyPage = () => {
                   </motion.p>
                   <div className="embla__container">
                     {videoLinks.map((videoLink, index) => (
-
                       <div className="embla__slide" key={index} style={{
                         overflow: 'hidden',
                         width: '400px',
