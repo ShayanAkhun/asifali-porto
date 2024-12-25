@@ -57,7 +57,6 @@ export const InfiniteMovingVideo = ({
 
 
     const [animeState, setAnimeState] = useState('animate-scroll'); // Default state for scroll animation
-    console.log(items, 'items')
     return (
         <div
             ref={containerRef}
@@ -75,32 +74,32 @@ export const InfiniteMovingVideo = ({
                     animeState // Dynamically apply the animeState
                 )}
             >
-                {items.map((item, idx) => (
-                    <li
-                        className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
-                        style={{
-                            background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
-                        }}
-                        key={idx} 
-                    >
-                        <div className="relative z-20 mt-6 flex flex-row items-center">
-
-                            <iframe
-                                src={item} 
-                                title={`Video ${idx + 1}`}
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                                style={{
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    width: '100%',
-                                    height: '100%',
-                                }}
-                            ></iframe>
-                        </div>
-                    </li>
-                ))}
+                {items.map((item, idx) =>{
+                    console.log(item , 'ites')
+                    return  (
+                        <li
+                            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+                            style={{
+                                background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
+                            }}
+                            key={idx} 
+                        >
+                            <div className="relative z-20 w-[100] h-[100] flex flex-row items-center">
+    
+                                <iframe
+                                    src={item.url} 
+                                    title={`Video ${idx + 1}`}
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                    }}
+                                ></iframe>
+                            </div>
+                        </li>
+                    )
+                })}
             </ul>
         </div>
     );

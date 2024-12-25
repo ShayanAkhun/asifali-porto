@@ -14,10 +14,7 @@ export function InfiniteMovingVideos() {
 }
 
 const VideoLinks = [
-  {
-    url:
-      "https://www.youtube.com/embed/7izs5orYtXo",
-    },
+ 
   {
     url:
       "https://www.youtube.com/embed/Svh4nKmNSj0",
