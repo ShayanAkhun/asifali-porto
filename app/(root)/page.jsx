@@ -100,6 +100,7 @@ const MyPage = () => {
                     src={VideoLink}
                     title={`Video`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowFullScreen
                     style={{
                       top: 0,
@@ -113,7 +114,7 @@ const MyPage = () => {
             </div>
             {/* Testimonials */}
             <div className="section ">
-              <div className="relative bottom-[200px]  mb-10 md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
+              <div className="relative bottom-[220px] h-[100%]  mb-10 md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-10 w-full pb-10  absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
                   <motion.h1
                     className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0  text-black text-5xl md:text-8xl font-bold"

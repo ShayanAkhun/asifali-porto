@@ -78,23 +78,26 @@ export const InfiniteMovingVideo = ({
                     console.log(item , 'ites')
                     return  (
                         <li
-                            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+                            className="w-[350px]relative "
                             style={{
                                 background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
                             }}
                             key={idx} 
                         >
-                            <div className="relative z-20 w-[100] h-[100] flex flex-row items-center">
+                            <div className="relative z-20 w-[350px] max-w-full h-[150px] flex flex-row items-center">
     
                                 <iframe
                                     src={item.url} 
                                     title={`Video ${idx + 1}`}
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
+                                    referrerpolicy="strict-origin-when-cross-origin"
                                     style={{
-                                        width: '100%',
-                                        height: '100%',
-                                    }}
+                                        top: 0,
+                                        left: 0,
+                                        width: "200%",
+                                        height: "150%",
+                                      }}
                                 ></iframe>
                             </div>
                         </li>
@@ -103,4 +106,6 @@ export const InfiniteMovingVideo = ({
             </ul>
         </div>
     );
+
+    
 };
