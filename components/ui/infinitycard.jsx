@@ -28,11 +28,6 @@ const testimonials = [
     title: "18.8K subscribers",
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
-  },
-  {
     quote:
       "“Asif has tremendous editing skills. I always wanted to have an editor that sticks out and does different editing styles & Asif just did it all. Thanks for our cooperation“",
     name: "Dave Obiefuna",

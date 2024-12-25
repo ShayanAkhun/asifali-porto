@@ -15,6 +15,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { InfiniteMovingCard } from "@/components/ui/infinitycard";
+import { InfiniteMovingVideos } from "@/components/ui/infinityVideos";
 const MyPage = () => {
   const fullpageOptions = {
     anchors: ["home", "testimonials", "projects", "contact"],
@@ -23,29 +24,6 @@ const MyPage = () => {
     menu: "#sidebar",
     lockAnchors: false,
   };
-  const videoLinks = [
-    'https://www.youtube.com/embed/7izs5orYtXo',
-    'https://www.youtube.com/embed/Svh4nKmNSj0',
-    'https://www.youtube.com/embed/CfN8nGhtOxM',
-  ];
-  const Images = [
-    {
-      id: 1,
-      src: '/img/test1.png'
-    },
-    {
-      id: 2,
-      src: '/img/test2.png'
-    },
-    {
-      id: 3,
-      src: '/img/test3.png',
-    },
-    {
-      id: 4,
-      src: '/img/test4.png'
-    }
-  ]
 
   const VideoLink = [" https://www.youtube.com/embed/wmkoEzDVc18"];
 
@@ -136,7 +114,7 @@ const MyPage = () => {
             {/* Testimonials */}
             <div className="section ">
               <div className="relative bottom-[200px]  mb-10 md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
-                <div className="z-10 w-full  absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
+                <div className="z-10 w-full pb-10  absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
                   <motion.h1
                     className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0  text-black text-5xl md:text-8xl font-bold"
                     initial={{ x: -100, opacity: 0 }}
@@ -160,13 +138,13 @@ const MyPage = () => {
                   >
                     These are some of my Clients Testimonials{" "}
                   </motion.p>
-                  <InfiniteMovingCard/>
+                  <InfiniteMovingCard />
                 </div>
               </div>
             </div>
             {/* Projects */}
             <div className="section">
-              <div className="relative bottom-[200px] right-14 md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
+              <div className="relative bottom-[200px] right-14 md:h-screen w-screen gap-4 flex justify-center items-center flex-row">
                 <div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
                   <motion.h1
                     className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold"
@@ -191,31 +169,7 @@ const MyPage = () => {
                   >
                     This is some of my projects that I have done and currently working on.
                   </motion.p>
-                  <div className="embla__container">
-                    {videoLinks.map((videoLink, index) => (
-                      <div className="embla__slide" key={index} style={{
-                        overflow: 'hidden',
-                        width: '400px',
-                        height: '250px',
-                        position: 'relative',
-                      }}>
-                        <iframe
-                          src={videoLink}
-                          title={`Video ${index + 1}`}
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          style={{
-                            position: 'absolute',
-                            top: 0,
-                            left: 0,
-                            width: '100%',
-                            height: '100%',
-                          }}
-                        ></iframe>
-                      </div>
-
-                    ))}
-                  </div>
+                  <InfiniteMovingVideos />
                 </div>
               </div>
             </div>
