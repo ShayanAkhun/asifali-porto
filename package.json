@@ -1,0 +1,46 @@
+{
+  "name": "my-porto-2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-sitemap": "node generate-sitemap.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fullpage/react-fullpage": "^0.1.40",
+    "@vercel/analytics": "^1.0.2",
+    "autoprefixer": "10.4.15",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-autoplay": "^8.5.1",
+    "embla-carousel-react": "^8.5.1",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "framer-motion": "^10.18.0",
+    "lucide-react": "^0.469.0",
+    "next": "13.4.19",
+    "nprogress": "^0.2.0",
+    "postcss": "8.4.28",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-slick": "^0.30.3",
+    "sharp": "^0.32.5",
+    "sitemap": "^7.1.1",
+    "swr": "^2.2.2",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss": "3.3.3",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.4.19",
+    "cross-env": "^7.0.3"
+  }
+}
