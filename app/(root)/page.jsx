@@ -161,17 +161,6 @@ const MyPage = () => {
                     These are some of my Clients Testimonials{" "}
                   </motion.p>
                   <InfiniteMovingCard/>
-                  <div style={{display:'flex', 
-                    flexDirection:'row',justifyContent: 'space-between', gap:8, right:14}}>
-                    {Images.map((image) => (
-                        <Image
-                          src={image.src}
-                          alt={`Slide ${image.id}`}
-                          width={400}
-                          height={200}
-                        />
-                    ))}
-                  </div>
                 </div>
               </div>
             </div>

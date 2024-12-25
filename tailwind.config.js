@@ -9,16 +9,15 @@ module.exports = {
   ],
   theme: {
   	extend: {
-			animation: {
-        scroll:
-          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-      },
 			keyframes: {
         scroll: {
           to: {
-            transform: "translate(calc(-50% - 0.5rem))",
+            transform: 'translate(calc(-50% - 0.5rem))', // This moves the content as you define
           },
         },
+      },
+      animation: {
+        scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
       },
   		borderRadius: {
   			lg: 'var(--radius)',
