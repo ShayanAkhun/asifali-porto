@@ -74,10 +74,10 @@ const MyPage = () => {
                       type: "spring",
                     }}
                   >
-                    I'm Asif Ali, a video editor with 5 years of experience
-                    working with top creators. I’ve helped one creator grow from
+                    I&apos;m Asif Ali, a video editor with 5 years of experience
+                    working with top creators. I&apos;ve helped one creator grow from
                     5k to 90k followers in a year and generated over 50 million
-                    views across my projects. Let’s work together to take your
+                    views across my projects. Let&apos;s work together to take your
                     content to the next level!
                   </motion.p>
                   <motion.div
