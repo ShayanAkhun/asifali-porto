@@ -132,19 +132,6 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 								</motion.h2>
 							</div>
 						</a>
-						<Link href="/projects">
-							<div
-								onClick={handleItemClick}
-								className="text-2xl font-bold text-white">
-								<motion.h2
-									className="text-white"
-									variants={itemVariants}
-									animate={isNavOpen ? "open" : "closed"}
-									custom={0.3}>
-									Projects
-								</motion.h2>
-							</div>
-						</Link>
 						<a href="/#contact">
 							<div
 								onClick={handleItemClick}

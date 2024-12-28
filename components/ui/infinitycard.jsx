@@ -5,12 +5,13 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export function InfiniteMovingCard() {
   return (
+
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
         speed="slow"
         pauseOnHover={true}
-      />
+        />
   );
 }
 
