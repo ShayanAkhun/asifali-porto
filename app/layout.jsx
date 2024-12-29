@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
 				<TopProgressBar />
 				<Navbar />
 				{children}
-				<Chat />
+				{/* <Chat /> */}
 				<Analytics />
 				<Script
       type="module"
