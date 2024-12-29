@@ -13,7 +13,6 @@ import Hr from "@/components/Hr";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { InfiniteMovingCard } from "@/components/ui/infinitycard";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
@@ -146,7 +145,7 @@ const MyPage = () => {
                       damping: 20,
                     }}>
                   </motion.div>
-                 
+
                 </div>
                 <div className="z-10 w-full bottom-[200px] absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
                   <motion.h1
@@ -217,25 +216,25 @@ const MyPage = () => {
               <div className="relative   md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
                   <motion.div
-										className=" h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
-										initial={{
-											x: 300,
-											opacity: 0,
-											z: -100,
-										}}
-										whileInView={{
-											x: 0,
-											opacity: 1,
-											z: 0,
-										}}
-										transition={{
-											delay: 0.5,
-											type: "spring",
-											stiffness: 100,
-											damping: 20,
-										}}>
-								
-									</motion.div>
+                    className=" h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
+                    initial={{
+                      x: 300,
+                      opacity: 0,
+                      z: -100,
+                    }}
+                    whileInView={{
+                      x: 0,
+                      opacity: 1,
+                      z: 0,
+                    }}
+                    transition={{
+                      delay: 0.5,
+                      type: "spring",
+                      stiffness: 100,
+                      damping: 20,
+                    }}>
+
+                  </motion.div>
                 </div>
                 <div className="z-10 w-full bottom-[200px] absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
                   <motion.h1
@@ -409,20 +408,7 @@ const MyPage = () => {
                         className="text-3xl"
                       />
                     </motion.a>
-                    <motion.a
-                      href="https://ytjobs.co/talent/profile/114286?r=742&utm_campaign=share-profile&utm_ref=talent&utm_source=copylink"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-                      initial={{ opacity: 0, y: 40 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        y: { delay: 0.4 },
-                        opacity: { delay: 0.5 },
-                      }}
-                    >
-                      <FontAwesomeIcon icon={faYoutube} className="text-3xl" />
-                    </motion.a>
+
                   </div>
                 </div>
               </div>
