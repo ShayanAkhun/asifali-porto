@@ -32,7 +32,7 @@ export default function Clients() {
     const clients = [
         {
           name: 'Jenny Hoyos',
-          username: '@JennyHoyos',
+          username: 'JennyHoyos',
           subscribers: '7.35M',
           videos: 221,
           description: 'Proving the best things in life are free!',
@@ -41,7 +41,7 @@ export default function Clients() {
         },
         {
           name: 'Tiffany Byrd Harrison',
-          username: '@TiffanyByrdHarrison',
+          username: 'TiffanyByrdHarrison',
           subscribers: '22.1K',
           videos: 186,
           description: 'Breaking down media messaging in movies and entertainment',
@@ -50,7 +50,7 @@ export default function Clients() {
         },
         {
           name: 'Yadster',
-          username: '@yadster',
+          username: 'yadster',
           subscribers: '91.2k',
           videos: 47,
           description: 'Making money online while having',
@@ -59,7 +59,7 @@ export default function Clients() {
         },
         {
           name: 'Luke Alexander',
-          username: '@lukealexander',
+          username: 'lukealexander',
           subscribers: '39.3k',
           videos: 232,
           description: 'Ive been documenting my journey from 0$ to million',
