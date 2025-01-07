@@ -24,12 +24,6 @@ const ClientCard = ({ name, username, subscribers, videos, description, profileI
           ))}
         </div>
       </div>
-      <div className="flex flex-col space-y-2">
-        <button className="bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Subscribe</button>
-        <button className="border border-gray-400 text-sm px-3 py-1 rounded-lg text-white">
-          View channel stats
-        </button>
-      </div>
     </div>
   );
 };
@@ -61,6 +55,7 @@ export default function Clients() {
           videos: 47,
           description: 'Making money online while having',
           profileImage: '/public/img/jenny.jpg', 
+          links: [{ label: '', url: '' }]
         },
         {
           name: 'Luke Alexander',
