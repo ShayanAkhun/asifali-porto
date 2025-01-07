@@ -75,7 +75,6 @@ export const InfiniteMovingVideo = ({
                 )}
             >
                 {items.map((item, idx) =>{
-                    console.log(item , 'ites')
                     return  (
                         <li
                             className="w-[350px]relative "

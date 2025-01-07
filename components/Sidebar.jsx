@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faHome,
-	faUser,
+	faUsersLine,
 	faFolderOpen,
 	faEnvelope,
 	
@@ -40,8 +40,16 @@ const Sidebar = () => {
 						/>
 					</button>
 				</li>
-				<li data-menuanchor="projects">
+				<li data-menuanchor="clients">
 					<button onClick={() => handleMoveToSection(3)}>
+						<FontAwesomeIcon
+							icon={faUsersLine}
+							className="text-xl"
+						/>
+					</button>
+				</li>
+				<li data-menuanchor="projects">
+					<button onClick={() => handleMoveToSection(4)}>
 						<FontAwesomeIcon
 							icon={faFolderOpen}
 							className="text-xl"
@@ -49,7 +57,7 @@ const Sidebar = () => {
 					</button>
 				</li>
 				<li data-menuanchor="contact">
-					<button onClick={() => handleMoveToSection(4)}>
+					<button onClick={() => handleMoveToSection(5)}>
 						<FontAwesomeIcon
 							icon={faEnvelope}
 							className="text-xl"
