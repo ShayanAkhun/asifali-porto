@@ -36,7 +36,7 @@ export default function Clients() {
           subscribers: '7.35M',
           videos: 221,
           description: 'Proving the best things in life are free!',
-          profileImage: '/public/img/jenny.jpg', 
+          profileImage: '/img/jenny.jpg', 
           links: [{ label: 'jennyhoyos.com', url: 'https://jennyhoyos.com' }]
         },
         {
@@ -45,7 +45,7 @@ export default function Clients() {
           subscribers: '22.1K',
           videos: 186,
           description: 'Breaking down media messaging in movies and entertainment',
-          profileImage: '/public/img/jenny.jpg', 
+          profileImage: '/img/tiffany.jpg', 
           links: [{ label: 'tiffanybyrdharrison', url: 'https://linktr.ee/tiffanybyrdharrison' }]
         },
         {
@@ -53,8 +53,8 @@ export default function Clients() {
           username: 'yadster',
           subscribers: '91.2k',
           videos: 47,
-          description: 'Making money online while having',
-          profileImage: '/public/img/jenny.jpg', 
+          description: 'Making money online while having Fun',
+          profileImage: '/img/yadster.jpg', 
           links: [{ label: '', url: '' }]
         },
         {
@@ -63,7 +63,7 @@ export default function Clients() {
           subscribers: '39.3k',
           videos: 232,
           description: 'Ive been documenting my journey from 0$ to million',
-          profileImage: '/public/img/jenny.jpg', 
+          profileImage: '/img/luke.jpg', 
           links: [{ label: 'closercartel.com', url: 'https://www.infooperator.com/optin-623408611724357746658' }]
         },
        
